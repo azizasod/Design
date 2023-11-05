@@ -1,0 +1,139 @@
+x/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ol, ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Layout */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+/* Header */
+.header, .site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Title */
+.title {
+    padding: 3em 3em 3em 0;
+}
+
+@media (max-width: 767px) {
+    .title, .logo {
+        padding: 1em 1em 1em 0;
+    }
+    .title {
+        min-width: 30%;
+    }
+    .logo {
+        max-width: 30%;
+    }
+}
+
+.title * {
+    color: #111;
+}
+
+.title p {
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #222;
+}
+
+.footer a {
+    color: #222;
+}
+
+.footer .social {
+    font-size: 2rem;
+}
+
+/* Typography */
+body {
+    background-color: rgb(162, 136, 198);
+}
+
+p, td, th, li, dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Använd en fet stil för rubrikerna */
+    margin-bottom: 10px; /* Öka avståndet mellan rubrikerna och efterföljande innehåll */
+    color: #333; /* Ändra färgen enligt dina önskemål */
+    text-transform: uppercase; /* Gör texten versaler om så önskas */
+    letter-spacing: 1px; /* Justera teckenavståndet för rubrikerna */
+    font-family:'Times New Roman', Times, serif; /* Använd en passande typsnitt */
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: 0.5em solid #f5f5f5;
+}
+
+/* Navigation Bar */
+.nav {
+    color: #fff; /* White text color */
+    padding: 15px 0; /* Inner margins for content within the navigation bar */
+    display: flex;
+    justify-content: space-between; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+/* Change link color on hover */
+.nav a:hover {
+    color: #41125e; /* Yellow color on hover */
+}
+
+/* Logo */
+.logo {
+    max-width: 100%;
+    height: auto; /* Behåll bildens proportioner */
+    display: block; /* För att centrerad vertikalt i förälderselementet */
+    margin: 0 auto; /* Centrerad horisontellt */
+}
