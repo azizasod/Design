@@ -25,7 +25,8 @@ body {
 }
 
 .main {
-    flex: 1 0 auto;
+    width: 80%; 
+    margin: 0 auto;
 }
 
 .header, .footer {
@@ -81,6 +82,7 @@ body {
 /* Typography */
 body {
     background-color: rgb(162, 136, 198);
+    line-height: 1.4;
 }
 
 p, td, th, li, dd {
